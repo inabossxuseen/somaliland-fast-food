@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Somaliland Fast Food – Best burgers, pizza, shawarma, fries & drinks delivered fast to your door in Somaliland." />
+  <meta name="keywords" content="fast food, Somaliland, burgers, pizza, shawarma, delivery, restaurant" />
+  <title>Somaliland Fast Food – Taste the Best</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">SOMALILAND FAST FOOD</span>
+  </div>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Order</h3>
+      <button id="close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <div class="cart-empty"><i class="fas fa-utensils"></i><p>Your cart is empty</p></div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn-checkout">Checkout <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fas fa-fire"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">SOMALILAND</span>
+          <span class="logo-sub">FAST FOOD</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="open-cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-container">
+      <div class="hero-content" data-reveal>
+        <div class="hero-badge">🔥 #1 Fast Food in Somaliland</div>
+        <h1 class="hero-title">
+          Best Fast Food<br />
+          <span class="gradient-text">in Somaliland</span>
+        </h1>
+        <p class="hero-sub">Delicious burgers, pizza, shawarma, fries &amp; drinks delivered blazing fast to your door — anywhere in Hargeisa.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn-primary"><i class="fas fa-bolt"></i> Order Now</a>
+          <a href="#menu" class="btn-ghost">View Menu <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Customers</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Menu Items</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <div class="hero-plate-wrap">
+          <div class="orbit orbit-1"><span>🍕</span></div>
+          <div class="orbit orbit-2"><span>🥤</span></div>
+          <div class="orbit orbit-3"><span>🍟</span></div>
+          <div class="orbit orbit-4"><span>🌯</span></div>
+          <div class="hero-plate">
+            <div class="plate-inner">🍔</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section id="categories" class="categories-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Browse</span>
+        <h2>Food <span class="gradient-text">Categories</span></h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card" data-reveal style="--delay:0.1s">
+          <div class="cat-icon">🍔</div>
+          <span>Burgers</span>
+          <div class="cat-count">12 items</div>
+        </div>
+        <div class="cat-card" data-reveal style="--delay:0.15s">
+          <div class="cat-icon">🍕</div>
+          <span>Pizza</span>
+          <div class="cat-count">8 items</div>
+        </div>
+        <div class="cat-card" data-reveal style="--delay:0.2s">
+          <div class="cat-icon">🍗</div>
+          <span>Chicken</span>
+          <div class="cat-count">10 items</div>
+        </div>
+        <div class="cat-card" data-reveal style="--delay:0.25s">
+          <div class="cat-icon">🥤</div>
+          <span>Drinks</span>
+          <div class="cat-count">15 items</div>
+        </div>
+        <div class="cat-card" data-reveal style="--delay:0.3s">
+          <div class="cat-icon">🍰</div>
+          <span>Desserts</span>
+          <div class="cat-count">9 items</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIAL OFFERS ===== -->
+  <section class="offers-section">
+    <div class="container">
+      <div class="offers-grid">
+        <div class="offer-banner offer-red" data-reveal>
+          <div class="offer-badge">LIMITED DEAL</div>
+          <h3>Buy 1 Get 1 <span>FREE</span></h3>
+          <p>On all burgers every Friday — dine in or delivery.</p>
+          <a href="#menu" class="btn-offer">Grab Deal <i class="fas fa-arrow-right"></i></a>
+          <div class="offer-emoji">🍔</div>
+        </div>
+        <div class="offer-banner offer-orange" data-reveal style="--delay:0.15s">
+          <div class="offer-badge">TODAY ONLY</div>
+          <h3>Free Delivery <span>All Day</span></h3>
+          <p>Order above $5 and get free express delivery across Hargeisa.</p>
+          <a href="#menu" class="btn-offer">Order Now <i class="fas fa-arrow-right"></i></a>
+          <div class="offer-emoji">🛵</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Our Menu</span>
+        <h2>Popular <span class="gradient-text">Items</span></h2>
+        <p>Handcrafted with the finest ingredients for maximum flavour.</p>
+      </div>
+      <div class="menu-filters" data-reveal>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="burger">Burgers</button>
+        <button class="filter-btn" data-filter="pizza">Pizza</button>
+        <button class="filter-btn" data-filter="chicken">Chicken</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="sides">Sides</button>
+      </div>
+      <div class="menu-grid" id="menu-grid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="about-img-wrap">
+            <div class="about-emoji-main">🏪</div>
+            <div class="about-tag tag-1"><i class="fas fa-star"></i> Est. 2015</div>
+            <div class="about-tag tag-2">🔥 500+ Daily Orders</div>
+          </div>
+        </div>
+        <div class="about-content" data-reveal>
+          <span class="section-tag">Our Story</span>
+          <h2>Feeding Somaliland <span class="gradient-text">Since 2015</span></h2>
+          <p>Somaliland Fast Food was born from a simple dream — to bring world-class fast food flavours to the heart of Hargeisa. What started as a single street-corner kitchen has grown into Somaliland's most-loved fast food brand, serving thousands of happy customers every single day.</p>
+          <p>We source the freshest ingredients, hand-prepare every item to order, and deliver with lightning speed. From our signature double-smash burger to our stone-baked pizzas and slow-marinated shawarma, every bite tells a story of passion and quality.</p>
+          <div class="about-pillars">
+            <div class="pillar"><i class="fas fa-leaf"></i><span>Fresh Ingredients</span></div>
+            <div class="pillar"><i class="fas fa-bolt"></i><span>Fast Delivery</span></div>
+            <div class="pillar"><i class="fas fa-heart"></i><span>Made with Love</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Services</span>
+        <h2>How We <span class="gradient-text">Serve You</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-reveal style="--delay:0.1s">
+          <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+          <h4>Express Delivery</h4>
+          <p>Hot food at your door in under 30 minutes — anywhere in Hargeisa.</p>
+        </div>
+        <div class="service-card" data-reveal style="--delay:0.15s">
+          <div class="service-icon"><i class="fas fa-utensils"></i></div>
+          <h4>Dine-In Experience</h4>
+          <p>Comfortable, modern seating with full table service and a premium atmosphere.</p>
+        </div>
+        <div class="service-card" data-reveal style="--delay:0.2s">
+          <div class="service-icon"><i class="fas fa-box"></i></div>
+          <h4>Catering & Events</h4>
+          <p>We cater weddings, corporate events, and parties — any size, any time.</p>
+        </div>
+        <div class="service-card" data-reveal style="--delay:0.25s">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>Online Ordering</h4>
+          <p>Order directly from our website or call us — easy, fast, and secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Reviews</span>
+        <h2>What Our <span class="gradient-text">Customers Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card" data-reveal style="--delay:0.1s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The smash burger is absolutely out of this world. I order it three times a week and it never disappoints. Best fast food in Hargeisa, full stop!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">F</div>
+            <div>
+              <strong>Faadumo Hassan</strong>
+              <span>Hargeisa, Somaliland</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--delay:0.15s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Delivery was at my door in 22 minutes — still piping hot. The shawarma wrap is packed with flavour. Love this place, will keep coming back!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--orange)">A</div>
+            <div>
+              <strong>Ahmed Ismail</strong>
+              <span>Hargeisa, Somaliland</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--delay:0.2s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Ordered catering for my company event — 80 people. Everything arrived on time, perfectly packaged, and everyone raved about the food. Exceptional service!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#7c3aed">M</div>
+            <div>
+              <strong>Maryan Abdi</strong>
+              <span>Berbera, Somaliland</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact <span class="gradient-text">Us</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <span>+252 63 000 1234</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>hello@somalilandfastfood.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Location</strong>
+              <span>26 June Road, Hargeisa, Somaliland</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Hours</strong>
+              <span>Daily: 8:00 AM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" data-reveal>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone / Email</label>
+              <input type="text" placeholder="Contact info" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="How can we help?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+          <div class="form-success" id="form-success">✅ Message sent! We'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fas fa-fire"></i></span>
+            <div class="logo-text">
+              <span class="logo-main">SOMALILAND</span>
+              <span class="logo-sub">FAST FOOD</span>
+            </div>
+          </a>
+          <p>Serving Somaliland's tastiest fast food since 2015. Proudly based in Hargeisa.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Menu</h5>
+          <ul>
+            <li><a href="#menu">Burgers</a></li>
+            <li><a href="#menu">Pizza</a></li>
+            <li><a href="#menu">Shawarma</a></li>
+            <li><a href="#menu">Chicken</a></li>
+            <li><a href="#menu">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact</h5>
+          <ul>
+            <li>+252 63 000 1234</li>
+            <li>hello@somalilandfastfood.com</li>
+            <li>26 June Road, Hargeisa</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Somaliland Fast Food. All rights reserved. Made with ❤️ in Hargeisa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
